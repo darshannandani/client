@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import MenuIcon from "@mui/icons-material/Menu";
 import { PersonRounded } from '@mui/icons-material';
 import { IconButton } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const NavBarDiv = styled.div` 
         display: flex;
@@ -44,10 +45,12 @@ const Navbar = ({ setMenuOpen, menuOpen }) => {
             <IcoButton onClick={() => setMenuOpen(!menuOpen)}>
                 <MenuIcon />
             </IcoButton>
+            <Link to="/profile" style={{ textDecoration: 'none', color: 'inherit' }} >
             <ButtonDiv>
                 <PersonRounded />
-                Login
+                Profile
             </ButtonDiv>
+            </Link>
         </NavBarDiv>
     )
 }

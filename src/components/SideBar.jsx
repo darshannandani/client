@@ -143,7 +143,7 @@ const SideBar = ({ menuOpen, setMenuOpen, setDarkMode, darkMode }) => {
                     <NavText>Search</NavText>
                 </Elements>
             </Link>
-            <Link to='/favourites' style={{ textDecoration: "none", color: "inherit", width: '100%' }}>
+            <Link to='/favorite' style={{ textDecoration: "none", color: "inherit", width: '100%' }}>
                 <Elements>
                     <FavoriteRounded />
                     <NavText>Favourites</NavText>
