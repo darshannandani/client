@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import PodcastCard from '../components/PodcastCard';
 
 const DashboardMain = styled.div` 
-  padding : 20px 40px;
+  padding : 20px 20px 20px 40px;
   padding-bottom: 200px;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -58,39 +58,60 @@ width: 100%;
 
 const Dashboard = () => {
   return (
-    <DashboardMain>
-      <FilterContainer>
-        <Topic>
-          Most Popular
-          <Link to={`/showpodcasts/mostpopular`}
-            style={{ textDecoration: "none" }}
-          >
-            <Span>Show All</Span>
-          </Link>
-        </Topic>
-        <Podcast>
-          <PodcastCard />
-          <PodcastCard />
-          <PodcastCard />
-        </Podcast>
-      </FilterContainer >
+    <>
+      <DashboardMain>
+        <FilterContainer>
+          <Topic>
+            Most Popular
+            <Link to={`/showpodcasts/mostpopular`}
+              style={{ textDecoration: "none" }}
+            >
+              <Span>Show All</Span>
+            </Link>
+          </Topic>
+          <Podcast>
+            <PodcastCard />
+            <PodcastCard />
+            <PodcastCard />
+          </Podcast>
+        </FilterContainer >
 
-      <FilterContainer>
-        <Topic>
-          Comedy
-          <Link to={`/showpodcasts/comedy`}
-            style={{ textDecoration: "none" }}
-          >
-            <Span>Show All</Span>
-          </Link>
-        </Topic>
-        <Podcast>
-          <PodcastCard />
-          <PodcastCard />
-          <PodcastCard />
-        </Podcast>
-      </FilterContainer >
-    </DashboardMain >
+        <FilterContainer>
+          <Topic>
+            Comedy
+            <Link to={`/showpodcasts/comedy`}
+              style={{ textDecoration: "none" }}
+            >
+              <Span>Show All</Span>
+            </Link>
+          </Topic>
+          <Podcast>
+            <PodcastCard />
+            <PodcastCard />
+            <PodcastCard />
+          </Podcast>
+        </FilterContainer >
+
+        <FilterContainer>
+          <Topic>
+            cricket
+            <Link to={`/showpodcasts/cricket`}
+              style={{ textDecoration: "none" }}
+            >
+              <Span>Show All</Span>
+            </Link>
+          </Topic>
+          <Podcast>
+            <PodcastCard />
+            <PodcastCard />
+            <PodcastCard />
+            <PodcastCard />
+            <PodcastCard />
+          </Podcast>
+        </FilterContainer >
+       
+      </DashboardMain >
+    </>
   )
 }
 
